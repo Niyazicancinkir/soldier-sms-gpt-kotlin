@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ASKER GPT GATEWAY"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- GEMINI -->
+
+        <EditText
+            android:id="@+id/etApiKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Gemini API Key"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:background="#EEEEEE"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- SMS -->
+
+        <EditText
+            android:id="@+id/etAllowedSender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="İzin Verilen Numara (+90...)"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:background="#EEEEEE"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- TELEGRAM -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TELEGRAM"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#555555"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etTelegramToken"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telegram Bot Token"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:background="#EEEEEE"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/etTelegramChatId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telegram Chat ID"
+            android:inputType="text"
+            android:padding="12dp"
+            android:background="#EEEEEE"
+            android:layout_marginBottom="24dp"/>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ayarları Kaydet ve Aktifleştir"
+            android:backgroundTint="#333333"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="32dp"/>
+
+        <Button
+            android:id="@+id/btnKillSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ACİL DURDUR (KILL SWITCH)"
+            android:backgroundTint="#D32F2F"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+</ScrollView>
